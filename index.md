@@ -23,7 +23,6 @@ title: ""
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: hidden;
   }
 
   @media (prefers-color-scheme: light) {
@@ -34,25 +33,6 @@ title: ""
   @media (prefers-color-scheme: dark) {
     body { background: var(--bg-dark); color: var(--text-dark); }
     a { color: var(--accent-dark); }
-  }
-
-  .main-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  .character {
-    width: 120px;
-    max-height: 240px;
-    display: none;
-  }
-
-  @media (min-width: 768px) {
-    .character {
-      display: block;
-    }
   }
 
   .link-box {
@@ -94,46 +74,20 @@ title: ""
   }
 
   .social-link {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 12px;
+    display: block;
     background-color: var(--accent-light);
     color: white;
     text-decoration: none;
-    padding: 12px 16px;
+    padding: 12px;
     margin: 10px 0;
     border-radius: 12px;
     font-weight: bold;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: slideIn 0.6s forwards;
-  }
-
-  .social-link img {
-    width: 20px;
-    height: 20px;
-  }
-
-  .social-link:nth-of-type(1) { animation-delay: 0.3s; }
-  .social-link:nth-of-type(2) { animation-delay: 0.45s; }
-  .social-link:nth-of-type(3) { animation-delay: 0.6s; }
-  .social-link:nth-of-type(4) { animation-delay: 0.75s; }
-  .social-link:nth-of-type(5) { animation-delay: 0.9s; }
-
-  @keyframes slideIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    transition: background 0.3s, transform 0.2s;
   }
 
   .social-link:hover {
     background-color: var(--text-light);
-    transform: scale(1.06);
-    box-shadow: 0 0 16px var(--accent-light);
+    transform: scale(1.03);
   }
 
   @media (prefers-color-scheme: dark) {
@@ -143,8 +97,6 @@ title: ""
 
     .social-link:hover {
       background-color: var(--text-dark);
-      color: var(--bg-dark);
-      box-shadow: 0 0 16px var(--accent-dark);
     }
   }
 
@@ -169,40 +121,14 @@ title: ""
   }
 </style>
 
-<div class="main-container">
-
-  <!-- Kira -->
-  <img class="character" src="https://i.imgur.com/q5K8Y9v.gif" alt="Kira GIF">
-
-  <!-- Bloque central -->
-  <div class="link-box">
-    <a href="https://github.com/SANJO777" target="_blank">
-      <img src="https://github.com/SANJO777.png" alt="Santiago Rodríguez" class="profile-pic">
-    </a>
-    <h2>My Social Links</h2>
-
-    <a class="social-link" href="https://github.com/SANJO777" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub Icon"> GitHub
-    </a>
-
-    <a class="social-link" href="https://sanjo777.github.io/portfolio/" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Portfolio Icon"> Portfolio
-    </a>
-
-    <a class="social-link" href="https://www.linkedin.com/in/santiago-rodr%C3%ADguez-0b7476375/" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon"> LinkedIn
-    </a>
-
-    <a class="social-link" href="https://instagram.com/saantiago.rodriguez/" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon"> Instagram
-    </a>
-
-    <a class="social-link" href="https://www.youtube.com/@sjrpnocommentary" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Icon"> YouTube
-    </a>
-  </div>
-
-  <!-- Kimetsu -->
-  <img class="character" src="https://i.imgur.com/JrIgh4T.gif" alt="Tanjiro GIF">
-
+<div class="link-box">
+  <a href="https://github.com/SANJO777" target="_blank">
+    <img src="https://github.com/SANJO777.png" alt="Santiago Rodríguez" class="profile-pic">
+  </a>
+  <h2>My Social Links</h2>
+  <a class="social-link" href="https://github.com/SANJO777" target="_blank">GitHub</a>
+  <a class="social-link" href="https://sanjo777.github.io/portfolio/" target="_blank">Portfolio</a>
+  <a class="social-link" href="https://www.linkedin.com/in/santiago-rodr%C3%ADguez-0b7476375/" target="_blank">LinkedIn</a>
+  <a class="social-link" href="https://instagram.com/saantiago.rodriguez/" target="_blank">Instagram</a>
+  <a class="social-link" href="https://www.youtube.com/@sjrpnocommentary" target="_blank">YouTube</a>
 </div>
