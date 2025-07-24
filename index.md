@@ -23,6 +23,7 @@ title: ""
     align-items: center;
     justify-content: center;
     height: 100vh;
+    overflow: hidden;
   }
 
   @media (prefers-color-scheme: light) {
@@ -58,6 +59,20 @@ title: ""
   .link-box h2 {
     margin-bottom: 20px;
     font-size: 1.6rem;
+    position: relative;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow {
+    0% { text-shadow: 0 0 4px var(--accent-light); }
+    100% { text-shadow: 0 0 14px var(--accent-light); }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    @keyframes glow {
+      0% { text-shadow: 0 0 4px var(--accent-dark); }
+      100% { text-shadow: 0 0 14px var(--accent-dark); }
+    }
   }
 
   .social-link {
@@ -69,12 +84,30 @@ title: ""
     margin: 10px 0;
     border-radius: 12px;
     font-weight: bold;
-    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideIn 0.6s forwards;
+  }
+
+  .social-link:nth-of-type(1) { animation-delay: 0.3s; }
+  .social-link:nth-of-type(2) { animation-delay: 0.45s; }
+  .social-link:nth-of-type(3) { animation-delay: 0.6s; }
+  .social-link:nth-of-type(4) { animation-delay: 0.75s; }
+  .social-link:nth-of-type(5) { animation-delay: 0.9s; }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   .social-link:hover {
     background-color: var(--text-light);
-    transform: scale(1.03);
+    transform: scale(1.06);
+    box-shadow: 0 0 16px var(--accent-light);
   }
 
   @media (prefers-color-scheme: dark) {
@@ -84,6 +117,8 @@ title: ""
 
     .social-link:hover {
       background-color: var(--text-dark);
+      color: var(--bg-dark);
+      box-shadow: 0 0 16px var(--accent-dark);
     }
   }
 
