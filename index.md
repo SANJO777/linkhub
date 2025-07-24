@@ -76,11 +76,14 @@ title: ""
   }
 
   .social-link {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
     background-color: var(--accent-light);
     color: white;
     text-decoration: none;
-    padding: 12px;
+    padding: 12px 16px;
     margin: 10px 0;
     border-radius: 12px;
     font-weight: bold;
@@ -89,6 +92,11 @@ title: ""
     opacity: 0;
     transform: translateY(20px);
     animation: slideIn 0.6s forwards;
+  }
+
+  .social-link img {
+    width: 20px;
+    height: 20px;
   }
 
   .social-link:nth-of-type(1) { animation-delay: 0.3s; }
@@ -148,9 +156,24 @@ title: ""
     <img src="https://github.com/SANJO777.png" alt="Santiago Rodríguez" class="profile-pic">
   </a>
   <h2>My Social Links</h2>
-  <a class="social-link" href="https://github.com/SANJO777" target="_blank">GitHub</a>
-  <a class="social-link" href="https://sanjo777.github.io/portfolio/" target="_blank">Portfolio</a>
-  <a class="social-link" href="https://www.linkedin.com/in/santiago-rodr%C3%ADguez-0b7476375/" target="_blank">LinkedIn</a>
-  <a class="social-link" href="https://instagram.com/saantiago.rodriguez/" target="_blank">Instagram</a>
-  <a class="social-link" href="https://www.youtube.com/@sjrpnocommentary" target="_blank">YouTube</a>
+
+  <a class="social-link" href="https://github.com/SANJO777" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub Icon"> GitHub
+  </a>
+
+  <a class="social-link" href="https://sanjo777.github.io/portfolio/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Portfolio Icon"> Portfolio
+  </a>
+
+  <a class="social-link" href="https://www.linkedin.com/in/santiago-rodr%C3%ADguez-0b7476375/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon"> LinkedIn
+  </a>
+
+  <a class="social-link" href="https://instagram.com/saantiago.rodriguez/" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon"> Instagram
+  </a>
+
+  <a class="social-link" href="https://www.youtube.com/@sjrpnocommentary" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Icon"> YouTube
+  </a>
 </div>
