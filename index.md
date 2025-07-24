@@ -94,6 +94,11 @@ title: ""
     margin-bottom: 20px;
     border: 4px solid var(--accent-light);
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+  }
+
+  .profile-pic:hover {
+    transform: scale(1.05);
   }
 
   @media (prefers-color-scheme: dark) {
@@ -104,7 +109,9 @@ title: ""
 </style>
 
 <div class="link-box">
-  <img src="https://github.com/SANJO777.png" alt="Santiago Rodríguez" class="profile-pic">
+  <a href="https://github.com/SANJO777" target="_blank">
+    <img src="https://github.com/SANJO777.png" alt="Santiago Rodríguez" class="profile-pic">
+  </a>
   <h2>My Social Links</h2>
   <a class="social-link" href="https://github.com/SANJO777" target="_blank">GitHub</a>
   <a class="social-link" href="https://sanjo777.github.io/portfolio/" target="_blank">Portfolio</a>
