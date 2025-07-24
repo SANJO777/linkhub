@@ -36,6 +36,25 @@ title: ""
     a { color: var(--accent-dark); }
   }
 
+  .main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .character {
+    width: 120px;
+    max-height: 240px;
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    .character {
+      display: block;
+    }
+  }
+
   .link-box {
     background-color: var(--bg-light);
     color: var(--text-light);
@@ -59,7 +78,6 @@ title: ""
   .link-box h2 {
     margin-bottom: 20px;
     font-size: 1.6rem;
-    position: relative;
     animation: glow 2s ease-in-out infinite alternate;
   }
 
@@ -151,29 +169,40 @@ title: ""
   }
 </style>
 
-<div class="link-box">
-  <a href="https://github.com/SANJO777" target="_blank">
-    <img src="https://github.com/SANJO777.png" alt="Santiago Rodríguez" class="profile-pic">
-  </a>
-  <h2>My Social Links</h2>
+<div class="main-container">
 
-  <a class="social-link" href="https://github.com/SANJO777" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub Icon"> GitHub
-  </a>
+  <!-- Kira -->
+  <img class="character" src="https://i.imgur.com/q5K8Y9v.gif" alt="Kira GIF">
 
-  <a class="social-link" href="https://sanjo777.github.io/portfolio/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Portfolio Icon"> Portfolio
-  </a>
+  <!-- Bloque central -->
+  <div class="link-box">
+    <a href="https://github.com/SANJO777" target="_blank">
+      <img src="https://github.com/SANJO777.png" alt="Santiago Rodríguez" class="profile-pic">
+    </a>
+    <h2>My Social Links</h2>
 
-  <a class="social-link" href="https://www.linkedin.com/in/santiago-rodr%C3%ADguez-0b7476375/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon"> LinkedIn
-  </a>
+    <a class="social-link" href="https://github.com/SANJO777" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111432.png" alt="GitHub Icon"> GitHub
+    </a>
 
-  <a class="social-link" href="https://instagram.com/saantiago.rodriguez/" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon"> Instagram
-  </a>
+    <a class="social-link" href="https://sanjo777.github.io/portfolio/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Portfolio Icon"> Portfolio
+    </a>
 
-  <a class="social-link" href="https://www.youtube.com/@sjrpnocommentary" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Icon"> YouTube
-  </a>
+    <a class="social-link" href="https://www.linkedin.com/in/santiago-rodr%C3%ADguez-0b7476375/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Icon"> LinkedIn
+    </a>
+
+    <a class="social-link" href="https://instagram.com/saantiago.rodriguez/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram Icon"> Instagram
+    </a>
+
+    <a class="social-link" href="https://www.youtube.com/@sjrpnocommentary" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube Icon"> YouTube
+    </a>
+  </div>
+
+  <!-- Kimetsu -->
+  <img class="character" src="https://i.imgur.com/JrIgh4T.gif" alt="Tanjiro GIF">
+
 </div>
